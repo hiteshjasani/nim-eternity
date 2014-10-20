@@ -1,0 +1,10 @@
+[Package]
+name = "eternity"
+version = "0.1"
+author = "Hitesh Jasani"
+description = "Library to humanize elapsed times"
+license = "MIT"
+
+[Deps]
+Requires: "nimrod >= 0.9.3"
+
