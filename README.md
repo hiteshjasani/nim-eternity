@@ -7,6 +7,12 @@ Library to convert delta times into a human or bot readable formats.
 
 This is a new version that is compatibile with nimble and nim 1.2.0.
 
+Find the latest version on nimble
+
+```sh
+nimble search eternity --ver
+```
+
 ## Usage
 
 ```nim
