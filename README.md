@@ -1,6 +1,8 @@
 nim-eternity
 ============
 
+![CI badge](https://github.com/hiteshjasani/nim-eternity/workflows/CI/badge.svg)
+
 Library to convert delta times into a human or bot readable formats.
 
 This is a new version that is compatibile with nimble and nim 1.2.0.
