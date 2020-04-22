@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.2.0"
+version       = "0.3.0"
 author        = "Hitesh Jasani"
 description   = "A library to humanize elapsed times"
 license       = "MIT"
