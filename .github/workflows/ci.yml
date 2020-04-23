@@ -8,11 +8,18 @@ jobs:
       REPO: nim-eternity
       NIM_VERSION: 1.2.0
 
+    strategy:
+      matrix:
+        NIM_VER: [1.2.0, latest]
+        OS_VER: [ubuntu, alpine]
+
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
 
     - name: Run Tests
-      run: docker run -v `pwd`:/usr/src/app -w /usr/src/app nimlang/nim:$NIM_VERSION nimble test -y
-
+      run: >
+        docker run -v `pwd`:/usr/src/app -w /usr/src/app
+        nimlang/nim:${{ matrix.NIM_VER }}-${{ matrix.OS_VER }}
+        nimble test -y
